@@ -35,3 +35,6 @@ jobs:
 
       - name: Force Failure
         run: (test -z $(go fmt ./...))
+      
+      - name: lint code
+        run: (staticcheck ./...)
